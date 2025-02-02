@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: black;
+  --foreground: white;
+}
+
+/* Applique le mode sombre */
+.dark {
+  --background: white;
+  --foreground: black;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Personnalisation de la barre de défilement */
+::-webkit-scrollbar {
+  width: 10px; /* Largeur de la barre */
+}
+
+/* Couleur du fond de la barre */
+::-webkit-scrollbar-track {
+  background: black; /* Couleur du fond */
+  border-radius: 10px; /* Coins arrondis */
+}
+
+/* Couleur et forme du curseur (le "thumb") */
+::-webkit-scrollbar-thumb {
+  background: #ef4444; /* Couleur rouge */
+  border-radius: 10px; /* Coins arrondis */
+  border: 2px solid #1a1a1a; /* Bordure autour */
+}
+
+/* Effet au survol */
+::-webkit-scrollbar-thumb:hover {
+  background: #ef4444; /* Rouge plus foncé au survol */
+}
+
+/* Mode sombre */
+.dark ::-webkit-scrollbar-track {
+  background: white; /* Fond blanc en mode dark */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #ef4444; /* Thumb gris foncé en mode dark */
+  border: 2px solid white; /* Bordure blanche */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Thumb plus clair au survol */
+}
