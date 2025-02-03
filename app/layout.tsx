@@ -13,7 +13,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr" suppressHydrationWarning className="scroll-smooth">
+    <html lang="fr" suppressHydrationWarning className="scroll-smooth dark">
       <body className={cn(GeistSans.variable, "font-sans h-full bg-background text-foreground")}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
@@ -22,3 +22,4 @@ export default function RootLayout({
     </html>
   );
 }
+
