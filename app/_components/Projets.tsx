@@ -58,16 +58,16 @@ export const Projets = () => {
     ];
   
     return (
-      <div className="flex justify-center items-center gap-4">
+      <div className="flex justify-center items-center gap-4 max-md:w-auto">
         {/* ---------------- PROJETS ------------------ */}
-        <div className=" rounded-lg px-11 py-8 w-auto border-[1px] flex flex-col">
+        <div className=" rounded-lg px-11 py-8 w-auto border-[1px] flex flex-col ">
           {/* ✅ H1 en dehors de la grid mais toujours dans le cadre */}
           <h1 className="text-white text-1xl font-bold mb-6 dark:text-black">
             Mes créations
           </h1>
     
           {/* Conteneur des projets en GRID */}
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1">
             {projects.map((project) => (
               <div key={project.id} className="flex items-center gap-6 mt-2">
                 {/* Lien avec l'image */}
@@ -76,6 +76,8 @@ export const Projets = () => {
                     <Image 
                       src={project.image}
                       alt={`Icône de ${project.title}`}
+                      width={50} 
+                      height={50} 
                       className="max-w-[35px] invert hover:invert-0 hover:bg-white hover:p-1 rounded-lg dark:invert-0 dark:hover:bg-white dark:hover:invert"
                     />
                   </a>
