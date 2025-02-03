@@ -6,9 +6,9 @@ export const Contact = () => {
 <div className="">
 
 
-      <h1 className="text-5xl font-bold text-white mb-8 ml-16 dark:text-black"> Contact</h1>
+      <h1 className="text-5xl font-bold text-white mb-8 ml-16 dark:text-black max-md:ml-0"> Contact</h1>
 
-        <p className="text-base text-white mb-24 w-[650px] ml-16 dark:text-black max-md:w-[400px] "> 💪 Ma <strong className="text-red-500">curiosité </strong>  
+        <p className="text-base text-white mb-24 w-[650px] ml-16 dark:text-black max-md:w-[370px] max-md:ml-0"> 💪 Ma <strong className="text-red-500">curiosité </strong>  
           et mon <strong className="text-red-500">engagement</strong>  dans chacune des missions que j&apos;ai menées
           dans ma carrière m’ont <strong className="text-red-500">motivé</strong>  aujourd&apos;hui à me lancer dans cette reconversion professionnelle. 
           Je souhaite, en intégrant une alternance, évoluer dans ce métier en me confrontant directement au monde du travail, en parallèle du programme scolaire.
@@ -20,7 +20,7 @@ export const Contact = () => {
           <div className="absolute -top-10 right-1/2 h-[2px] w-48 rounded-full bg-gradient-to-r from-red-500"></div>
         </div>
       </div>
-      <div className=" rounded-3xl flex items-center justify-start gap-8 ml-16">
+      <div className=" rounded-3xl flex items-center justify-start gap-8 ml-16 max-md:ml-0 max-md:justify-center">
   
                 <a href="CV_Maxime_E.pdf"><Image  width={50} height={50} className=" max-w-[25px] invert hover:opacity-50 dark:invert-0" src="/cv.png"  alt="logo avec lien cv" /></a>
                 <a href="mailto:maxime.esteves81@orange.fr?subject=Contact&body=Bonjour,"><Image width={50} height={50} className=" max-w-[25px] invert hover:opacity-50 dark:invert-0" src="/mail.png" alt="logo avec lien mail" /></a>
