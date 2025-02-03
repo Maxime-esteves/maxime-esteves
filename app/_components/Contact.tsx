@@ -8,13 +8,13 @@ export const Contact = () => {
 
       <h1 className="text-5xl font-bold text-white mb-8 ml-16 dark:text-black max-md:ml-0"> Contact</h1>
 
-        <p className="text-base text-white mb-24 w-[650px] ml-16 dark:text-black max-md:w-[370px] max-md:ml-0"> 💪 Ma <strong className="text-red-500">curiosité </strong>  
+        <p className="text-base text-white mb-24 w-[650px] ml-16 dark:text-black max-md:w-[360px] max-md:ml-0"> 💪 Ma <strong className="text-red-500">curiosité </strong>  
           et mon <strong className="text-red-500">engagement</strong>  dans chacune des missions que j&apos;ai menées
           dans ma carrière m’ont <strong className="text-red-500">motivé</strong>  aujourd&apos;hui à me lancer dans cette reconversion professionnelle. 
           Je souhaite, en intégrant une alternance, évoluer dans ce métier en me confrontant directement au monde du travail, en parallèle du programme scolaire.
           <br /> <br /> Je suis disponible dans la zone de 📍 Montauban (82) 📍 Toulouse (31), mais également prêt à travailler en 🖥️ 100 % distanciel ! ☺️</p>
 
-      <div className="relative lg:max-w-2xl ml-16">
+      <div className="relative max-w-2xl ml-16 max-md:ml-0">
         <div className="pointer-events-none">
           <div className="absolute right-1/2 translate-x-1/2 -top-10 h-px w-[100%] bg-gray-400 opacity-20"></div>
           <div className="absolute -top-10 right-1/2 h-[2px] w-48 rounded-full bg-gradient-to-r from-red-500"></div>
