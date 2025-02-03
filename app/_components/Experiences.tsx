@@ -15,7 +15,7 @@ export default function ExpandableDiv(): JSX.Element {
       description:
         "Réception et préparation de commandes de matériels médicaux.",
       link: "https://mignonneries-nathalie.fr",
-      image: "IconeASEPT.png",
+      image: "/IconeASEPT.png",
       date: "2023 - 2024"
     },
     {
@@ -24,7 +24,7 @@ export default function ExpandableDiv(): JSX.Element {
       description:
         "Gestion de la chaîne  et du dépôt logistique. Supervision d'une équipe de 3 personnes.",
       link: "https://maximeesteves.github.io/jeux.html",
-      image: "IconeMalrieu.png",
+      image: "/IconeMalrieu.png",
       date: "2019 -2022"
     },
     {
@@ -33,7 +33,7 @@ export default function ExpandableDiv(): JSX.Element {
       description:
         'Vente et conseil en électricité aux particuliers et professionnels.',
       link: "https://maximeesteves.github.io/application.html",
-      image: "IconeMalrieu.png",
+      image: "/IconeMalrieu.png",
       date: "2017 - 2018"
     },
   ]
@@ -45,12 +45,12 @@ export default function ExpandableDiv(): JSX.Element {
       description:
         "Électricité générale sur habitations neuves et/ou rénovées.",
       link: "https://marineesteves.go.yn.fr/",
-      image: "IconeSME.png",
+      image: "/IconeSME.png",
       date: "2013 - 2017"
     },
   ];
   return (
-    <div className="flex flex-col items-start">
+    <div className="flex flex-col items-start max-md:flex-row max-md:w-auto max-md:justify-center">
       {/* Div avec transition */}
       <div
         className={`w-auto border-[1px] p-4 rounded-lg overflow-hidden transition-all duration-500 ${
@@ -69,6 +69,8 @@ export default function ExpandableDiv(): JSX.Element {
                   <Image 
                     src={experiencesVisible.image}
                     alt={`Icône de ${experiencesVisible.title}`}
+                    width={50} 
+                      height={50}
                     className="max-w-[35px] hover:bg-white hover:rounded-xl rounded-lg ml-2  " 
                   />
               </div>
@@ -78,7 +80,7 @@ export default function ExpandableDiv(): JSX.Element {
                 <h3 className="text-white text-base font-medium tracking-tight">
                   {experiencesVisible.title}
                 </h3>
-                <p className="text-gray-500 text-sm w-[280px] ">{experiencesVisible.description}</p>
+                <p className="text-gray-500 text-sm w-[280px] max-md:w-[200px]">{experiencesVisible.description}</p>
               </div>
               <div>
                 <p className="text-gray-300 text-xs dark:text-black">{experiencesVisible.date}</p>
@@ -103,6 +105,8 @@ export default function ExpandableDiv(): JSX.Element {
                   <Image 
                     src={experiences.image}
                     alt={`Icône de ${experiences.title}`}
+                    width={50} 
+                      height={50}
                     className="max-w-[35px] hover:bg-white hover:rounded-xl rounded-lg ml-2"
                   />
                 </a>
@@ -113,7 +117,7 @@ export default function ExpandableDiv(): JSX.Element {
                 <h3 className="text-white text-base font-medium tracking-tight dark:text-black">
                   {experiences.title}
                 </h3>
-                <p className="text-gray-500 text-sm w-[280px]">{experiences.description}</p>
+                <p className="text-gray-500 text-sm w-[280px] max-md:w-[200px]">{experiences.description}</p>
               </div>
               <div>
                 <p className="text-gray-300 text-xs dark:text-black">{experiences.date}</p>
