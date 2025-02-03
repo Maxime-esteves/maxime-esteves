@@ -117,13 +117,13 @@ export const Header = () => {
       </nav>
 
       <div className="ml-96 mb-8 flex flex-row items-center gap-8 max-md:ml-0 max-md:justify-center">
-        <h1 className="text-5xl font-bold text-white dark:text-black max-md:w-[380px]">
+        <h1 className="text-5xl font-bold text-white dark:text-black max-md:w-[360px]">
           Développeur front-end
         </h1>
       </div>
 
       <div className="ml-96 w-[700px] max-md:ml-0 max-md:w-auto max-md:flex max-md:flex-rows max-md:justify-center">
-        <p className="text-base text-white mb-24 dark:text-black max-md:w-[380px]">
+        <p className="text-base text-white mb-24 dark:text-black max-md:w-[360px]">
           👋 Bonjour, je suis <strong className="text-red-500">Maxime Esteves</strong>, en
           reconversion professionnelle, je recherche une entreprise pour valider ma formation
           de Développeur Web en alternance.
@@ -135,7 +135,7 @@ export const Header = () => {
         </p>
       </div>
 
-      <div className="relative max-w-2xl ml-96 mb-48 max-md:ml-20  max-md:mb-24" id="projets">
+      <div className="relative max-w-2xl ml-96 mb-48 max-md:ml-12  max-md:mb-24" id="projets">
         <div className="pointer-events-none">
           <div className="absolute right-1/2 translate-x-1/2 -top-10 h-px w-[100%] bg-gray-400 opacity-20"></div>
           <div className="absolute -top-10 right-1/2 h-[2px] w-48 rounded-full bg-gradient-to-r from-red-500"></div>
