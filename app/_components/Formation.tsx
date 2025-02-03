@@ -63,7 +63,7 @@ export default function ExpandableDiv(): JSX.Element {
   
               {/* Texte descriptif */}
               <div>
-                <h3 className="text-white text-base font-medium tracking-tight">
+                <h3 className="text-white text-base font-medium tracking-tight dark:text-black">
                   {formationVisible.title}
                 </h3>
                 <p className="text-gray-500 text-sm w-[280px] max-md:w-[200px]">{formationVisible.description}</p>
