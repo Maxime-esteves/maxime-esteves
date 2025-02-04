@@ -17,7 +17,7 @@ const Button = () => {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="w-16 h-8 flex items-center bg-gray-300 dark:bg-gray-300 rounded-full p-1 transition-all duration-300 fixed max-md:mt-8 max-md:static max-xl:static"
+      className="w-16 h-8 flex items-center bg-gray-300 dark:bg-gray-300 rounded-full p-1 transition-all duration-300 fixed max-md:mt-8 max-md:static max-xl:static max-2xl:static"
     >
       <div
         className={`w-6 h-6 flex items-center justify-center rounded-full bg-black dark:bg-white shadow-md transform transition-all duration-300 ${
