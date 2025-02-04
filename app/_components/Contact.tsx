@@ -22,11 +22,11 @@ export const Contact = () => {
       </div>
       <div className=" rounded-3xl flex items-center justify-start gap-8 ml-16 max-md:ml-0 max-md:justify-center">
   
-                <a href="CV_Maxime_E.pdf"><Image  width={50} height={50} className=" max-w-[25px] invert hover:opacity-50 dark:invert-0" src="/cv.png"  alt="logo avec lien cv" /></a>
-                <a href="mailto:maxime.esteves81@orange.fr?subject=Contact&body=Bonjour,"><Image width={50} height={50} className=" max-w-[25px] invert hover:opacity-50 dark:invert-0" src="/mail.png" alt="logo avec lien mail" /></a>
-                <a href="https://www.linkedin.com/in/maxime-esteves-7a12b3225"><Image width={50} height={50} className=" max-w-[25px] invert hover:opacity-50 dark:invert-0" src="/linkedin.svg" alt="logo avec lien linkedin" /></a>
-                <a href="https://www.twitch.tv/maximodelavego"><Image width={50} height={50} className=" max-w-[25px] invert hover:opacity-50 dark:invert-0" src="/twitch.svg" alt="logo avec lien twitch" /></a>
-                <a href="https://www.tiktok.com/@maximo_delavego?lang=fr"><Image width={50} height={50} className=" max-w-[25px] invert hover:opacity-50 dark:invert-0" src="/tiktok.png" alt="logo avec lien tiktok" /></a>
+                <a href="CV_Maxime_E.pdf" target="blank"><Image  width={50} height={50} className=" max-w-[25px] invert hover:opacity-50 dark:invert-0" src="/cv.png"  alt="logo avec lien cv" /></a>
+                <a href="mailto:maxime.esteves81@orange.fr?subject=Contact&body=Bonjour,%0AJe%20vous%20veux%20dans%20mon%20équipe%20!%20☺️" target="blank"><Image width={50} height={50} className=" max-w-[25px] invert hover:opacity-50 dark:invert-0" src="/mail.png" alt="logo avec lien mail" /></a>
+                <a href="https://www.linkedin.com/in/maxime-esteves-7a12b3225 " target="blank"><Image width={50} height={50} className=" max-w-[25px] invert hover:opacity-50 dark:invert-0" src="/linkedin.svg" alt="logo avec lien linkedin" /></a>
+                <a href="https://www.twitch.tv/maximodelavego" target="blank"><Image width={50} height={50} className=" max-w-[25px] invert hover:opacity-50 dark:invert-0" src="/twitch.svg" alt="logo avec lien twitch" /></a>
+                <a href="https://www.tiktok.com/@maximo_delavego?lang=fr" target="blank"><Image width={50} height={50} className=" max-w-[25px] invert hover:opacity-50 dark:invert-0" src="/tiktok.png" alt="logo avec lien tiktok" /></a>
 
         </div>  
       </div>
