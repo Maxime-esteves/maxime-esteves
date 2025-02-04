@@ -39,7 +39,7 @@ export default Button;
 export const Header = () => {
   return (
     <header className="ml-20  max-md:ml-0 " >
-      <nav className="flex space-x-10 mt-10 mr-20 mb-24 items-center max-md:mr-0 max-md:items-center max-md:flex-col max-md:gap-2 max-md:justify-center max-md:space-x-0 max-xl:justify-center">
+      <nav className="flex space-x-10 mt-10 mr-20 mb-24 items-center max-md:mr-0 max-md:items-center max-md:flex-col max-md:gap-2 max-md:justify-center max-md:space-x-0 max-xl:justify-center ">
         <Image
           className="w-14 rounded-full ml-96 max-md:ml-0 max-md:items-center max-2xl:ml-36 max-xl:ml-0"
           src="/photoProfil.png"
@@ -63,8 +63,8 @@ export const Header = () => {
           </a>
         </div>
 
-        <div className="border-[1px] rounded-3xl py-2 px-4 flex items-center gap-8">
-          <a href="CV_Maxime_E.pdf">
+        <div className="border-[1px] rounded-3xl py-2 px-4 flex items-center gap-8" >
+          <a href="CV_Maxime_E.pdf" target="blank">
             <Image
               className="max-w-[25px] invert hover:opacity-50 dark:invert-0"
               src="/cv.png"
@@ -73,7 +73,7 @@ export const Header = () => {
               height={25}
             />
           </a>
-          <a href="mailto:maxime.esteves81@orange.fr?subject=Contact&body=Bonjour,">
+          <a href="mailto:maxime.esteves81@orange.fr?subject=Contact&body=Bonjour,%0AJe%20vous%20veux%20dans%20mon%20équipe%20!%20☺️" target="blank">
             <Image
               className="max-w-[25px] invert hover:opacity-50 dark:invert-0"
               src="/mail.png"
@@ -82,7 +82,7 @@ export const Header = () => {
               height={25}
             />
           </a>
-          <a href="https://www.linkedin.com/in/maxime-esteves-7a12b3225">
+          <a href="https://www.linkedin.com/in/maxime-esteves-7a12b3225" target="blank">
             <Image
               className="max-w-[25px] invert hover:opacity-50 dark:invert-0"
               src="/linkedin.svg"
@@ -91,7 +91,7 @@ export const Header = () => {
               height={25}
             />
           </a>
-          <a href="https://www.twitch.tv/maximodelavego">
+          <a href="https://www.twitch.tv/maximodelavego"  target="blank">
             <Image
               className="max-w-[25px] invert hover:opacity-50 dark:invert-0"
               src="/twitch.svg"
@@ -100,18 +100,19 @@ export const Header = () => {
               height={25}
             />
           </a>
-          <a href="https://www.tiktok.com/@maximo_delavego?lang=fr">
+          <a href="https://www.tiktok.com/@maximo_delavego?lang=fr" target="blank">
             <Image
               className="max-w-[25px] invert hover:opacity-50 dark:invert-0"
               src="/tiktok.png"
               alt="logo avec lien tiktok"
+              
               width={25}
               height={25}
             />
           </a>
         </div>
 
-        <div className="flex items-center px-96 max-md:px-0 max-xl:px-0">
+        <div className="flex items-center px-96 max-md:px-0 max-2xl:px-0">
           <Button />
         </div>
       </nav>
