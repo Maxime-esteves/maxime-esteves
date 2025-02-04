@@ -21,7 +21,7 @@ export const Skills = () => {
 
       <div id="skills">
         <p className="text-base text-white mb-24 w-[700px] dark:text-black max-md:w-[370px]">
-          💪 Fort <strong className="text-red-500">expérience de six ans</strong> dans la logistique d’un commerce de gros avec une expérience en vente/bureau d&apos;étude en électricité, j&apos;ai pu acquérir 
+          💪 Fort d'une <strong className="text-red-500">expérience de six ans</strong> dans la logistique d’un commerce de gros avec une expérience en vente/bureau d&apos;étude en électricité, j&apos;ai pu acquérir 
           des compétences uniques qui sauront vous montrer ma persévérance dans mon travail.
           <br />
           <br /> Je suis autodidacte, curieux et envieux d&apos;apprentissage ! Découvre mes skills ☺️
