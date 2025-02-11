@@ -43,10 +43,10 @@ export const Projets = () => {
       },
        {
          id: 6,
-         title: "Site web recherche d'entreprise",
-         description: "En cours de création.",
-         link: "",
-         image: "editer.svg",
+         title: "Application de gestion d'élevage",
+         description: "Gestion d'un élevage de Volkorne sur Dofus. PHP/MySQL/JS",
+         link: "https://le-bon-eleveur.42web.io/",
+         image: "angle-cercle-droite.svg",
        },
       // {
       //   id: 7,
