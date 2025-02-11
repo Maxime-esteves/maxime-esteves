@@ -14,7 +14,7 @@ export default function ExpandableDiv(): JSX.Element {
       title: "Employé logistique",
       description:
         "Réception et préparation de commandes de matériels médicaux.",
-      link: "https://mignonneries-nathalie.fr",
+      link: "",
       image: "/IconeASEPT.png",
       date: "2023 - 2024"
     },
@@ -23,7 +23,7 @@ export default function ExpandableDiv(): JSX.Element {
       title: "Coordinateur logistique",
       description:
         "Gestion de la chaîne  et du dépôt logistique. Supervision d'une équipe de 3 personnes.",
-      link: "https://maximeesteves.github.io/jeux.html",
+      link: "",
       image: "/IconeMalrieu.png",
       date: "2019 -2022"
     },
@@ -32,7 +32,7 @@ export default function ExpandableDiv(): JSX.Element {
       title: "Vendeur/BE électricité",
       description:
         'Vente et conseil en électricité aux particuliers et professionnels.',
-      link: "https://maximeesteves.github.io/application.html",
+      link: "",
       image: "/IconeMalrieu.png",
       date: "2017 - 2018"
     },
@@ -44,7 +44,7 @@ export default function ExpandableDiv(): JSX.Element {
       title: "Électricien",
       description:
         "Électricité générale sur habitations neuves et/ou rénovées.",
-      link: "https://marineesteves.go.yn.fr/",
+      link: "",
       image: "/IconeSME.png",
       date: "2013 - 2017"
     },
@@ -53,7 +53,7 @@ export default function ExpandableDiv(): JSX.Element {
     <div className="flex flex-col items-start max-md:flex-row max-md:w-auto max-md:justify-center">
       {/* Div avec transition */}
       <div
-        className={`w-auto border-[1px] p-4 rounded-lg overflow-hidden transition-all duration-500 ${
+        className={`w-auto border-[1px] p-4 rounded-lg overflow-hidden transition-all duration-500 max-md:ml-6 max-md:mr-6 ${
           isExpanded ? "h-auto" : "h-auto"
         }`}
       >
@@ -93,15 +93,11 @@ export default function ExpandableDiv(): JSX.Element {
           {experiences.map((experiences) => (
             <div
               key={experiences.id}
-              className="flex items-center gap-8 mb-10 "
+              className="flex items-center gap-8 mb-6 "
             >
               {/* Lien avec l'image */}
               <div>
-                <a
-                  href={experiences.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                
                   <Image 
                     src={experiences.image}
                     alt={`Icône de ${experiences.title}`}
@@ -109,7 +105,7 @@ export default function ExpandableDiv(): JSX.Element {
                       height={50}
                     className="max-w-[35px] hover:bg-white hover:rounded-xl rounded-lg ml-2"
                   />
-                </a>
+                
               </div>
   
               {/* Texte descriptif */}
@@ -130,7 +126,7 @@ export default function ExpandableDiv(): JSX.Element {
 
   <button
     onClick={() => setIsExpanded(!isExpanded)}
-    className=" text-red-500 rounded-lg hover:text-white  "
+    className=" text-red-500 rounded-lg hover:text-white"
     >
     {isExpanded ? "Réduire" : "Afficher"}
   </button>
