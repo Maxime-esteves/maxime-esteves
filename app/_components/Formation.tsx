@@ -40,7 +40,7 @@ export default function ExpandableDiv(): JSX.Element {
     <div className="flex flex-col items-end max-md:flex-row max-md:w-auto max-md:justify-center">
       {/* Div avec transition */}
       <div
-        className={`w-auto border-[1px] p-4 rounded-lg h-[346px] max-md:h-[380px] `}
+        className={`w-auto border-[1px] p-4 rounded-lg h-[346px] max-md:h-[380px] max-md:ml-6 max-md:mr-6`}
       >
         <h1 className="text-white text-1xl font-bold mb-6 dark:text-black ">Mes formations</h1>
        {formationVisible.map((formationVisible) => (
