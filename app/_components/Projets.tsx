@@ -1,6 +1,13 @@
+"use client"
+import { JSX, useState } from "react";
 import Image from "next/image";
+
 export const Projets = () => {
-    const projects = [
+  return <ExpandableDiv />;
+};
+export default function ExpandableDiv(): JSX.Element {
+    const [isExpanded, setIsExpanded] = useState<boolean>(false);
+    const projectsInvisible = [
       {
         id: 1,
         title: "Site E-commerce",
@@ -41,26 +48,29 @@ export const Projets = () => {
         link: "https://maximeesteves.github.io/",
         image: "angle-cercle-droite.svg",
       },
+      {
+        id: 6,
+        title: "Application de gestion d'élevage",
+        description: "Gestion d'un élevage de Volkorne sur Dofus. PHP/MySQL/JS",
+        link: "https://le-bon-eleveur.42web.io/",
+        image: "angle-cercle-droite.svg",
+      },
+    ];
+      const projects = [
        {
-         id: 6,
-         title: "Application de gestion d'élevage",
-         description: "Gestion d'un élevage de Volkorne sur Dofus. PHP/MySQL/JS",
-         link: "https://le-bon-eleveur.42web.io/",
-         image: "angle-cercle-droite.svg",
+         id: 7,
+         title: "Site web recherche d'entreprise",
+         description: "En cours de création.",
+         image: "editer.svg",
        },
-      // {
-      //   id: 7,
-      //   title: "Site web d'un jeu vidéo",
-      //   description: "En cours de création.",
-      //   link: "",
-      //   image: "editer.svg",
-      // },
     ];
   
     return (
-      <div className="flex justify-center items-center gap-4 max-md:w-auto">
+      <div className="flex justify-center items-center gap-4">
         {/* ---------------- PROJETS ------------------ */}
-        <div className=" rounded-lg px-11 py-8 w-auto border-[1px] flex flex-col ">
+        <div className={`rounded-lg px-8 py-8 w-auto border-[1px] flex flex-col max-md:ml-6 max-md:mr-6 ${
+        isExpanded ? "h-auto" : "h-auto"
+        }`}>
           {/* ✅ H1 en dehors de la grid mais toujours dans le cadre */}
           <h1 className="text-white text-1xl font-bold mb-6 dark:text-black">
             Mes créations
@@ -68,14 +78,16 @@ export const Projets = () => {
     
           {/* Conteneur des projets en GRID */}
           <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1">
-            {projects.map((project) => (
-              <div key={project.id} className="flex items-center gap-6 mt-2">
+            {projectsInvisible.map((projectsInvisible) => (
+              <div 
+              key={projectsInvisible.id} 
+              className="flex items-center gap-6 mb-4">
                 {/* Lien avec l'image */}
                 <div>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <a href={projectsInvisible.link} target="_blank" rel="noopener noreferrer">
                     <Image 
-                      src={project.image}
-                      alt={`Icône de ${project.title}`}
+                      src={projectsInvisible.image}
+                      alt={`Icône de ${projectsInvisible.title}`}
                       width={50} 
                       height={50} 
                       className="max-w-[35px] invert hover:invert-0 hover:bg-white hover:p-1 rounded-lg dark:invert-0 dark:hover:bg-white dark:hover:invert"
@@ -86,15 +98,48 @@ export const Projets = () => {
                 {/* Texte descriptif */}
                 <div>
                   <h3 className="text-white text-base font-medium tracking-tight dark:text-black">
-                    {project.title}
+                    {projectsInvisible.title}
                   </h3>
-                  <p className="text-gray-500 text-sm dark:text-black">{project.description}</p>
+                  <p className="text-gray-500 text-sm dark:text-black">{projectsInvisible.description}</p>
                 </div>
               </div>
             ))}
           </div>
-        </div>
-      </div>
+        
+        {isExpanded && (
+                  <div>
+                  {projects.map((projects) => (
+                    <div key={projects.id} className="flex items-center gap-6 mb-6">
+                    {/* Lien avec l'image */}
+                    <div>
+                        <Image 
+                          src={projects.image}
+                          alt={`Icône de ${projects.title}`}
+                          width={50} 
+                          height={50} 
+                          className="max-w-[35px] mt-10 invert hover:invert-0 hover:bg-white hover:p-1 rounded-lg dark:invert-0 dark:hover:bg-white dark:hover:invert"
+                        />
+                    </div>
+        
+                    {/* Texte descriptif */}
+                    <div>
+                      <h3 className="text-white text-base font-medium tracking-tight dark:text-black mt-10">
+                        {projects.title}
+                      </h3>
+                      <p className="text-gray-500 text-sm dark:text-black">{projects.description}</p>
+                    </div>
+                  </div>
+                  ))}
+                  </div>
+                )}
+        <button
+    onClick={() => setIsExpanded(!isExpanded)}
+    className=" text-red-500 rounded-lg hover:text-white flex justify-start"
+    >
+    {isExpanded ? "Réduire" : "Afficher"}
+  </button>
+  </div>
+  </div>
     );
     
   };
